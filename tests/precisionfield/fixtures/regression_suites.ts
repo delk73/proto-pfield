@@ -1,5 +1,5 @@
 
-import { SDFNode } from '../../../types';
+import { SDFNode } from '../../../src/types';
 
 export const FIXTURE_MIRROR_SIBLINGS: SDFNode = {
   id: "mirror-root",

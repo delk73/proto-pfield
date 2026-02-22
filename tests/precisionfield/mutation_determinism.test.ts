@@ -1,7 +1,7 @@
 
-import { SDFNode, isOperation, SDFOperation } from '../../types';
-import { compileToIR } from '../../services/compiler';
-import { serializeIR, computeHash } from '../../services/validation';
+import { SDFNode, isOperation, SDFOperation } from '../../src/types';
+import { compileToIR } from '../../src/services/compiler';
+import { serializeIR, computeHash } from '../../src/services/validation';
 import { FIXTURE_MIRROR_SIBLINGS } from './fixtures/regression_suites';
 
 /**

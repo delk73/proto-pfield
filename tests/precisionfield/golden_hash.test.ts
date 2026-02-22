@@ -1,6 +1,6 @@
 
-import { compileToIR } from '../../services/compiler';
-import { serializeIR, computeHash } from '../../services/validation';
+import { compileToIR } from '../../src/services/compiler';
+import { serializeIR, computeHash } from '../../src/services/validation';
 import * as fixtures from './fixtures/regression_suites';
 
 export async function runGoldenTests() {

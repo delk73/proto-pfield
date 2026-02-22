@@ -28,7 +28,12 @@ export interface EnhancedState extends PrecisionFieldState {
   checkpoint: SDFNode | null;
 }
 
-const generateId = () => crypto.randomUUID().split('-')[0];
+const generateId = () => {
+  if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+    return crypto.randomUUID().split('-')[0];
+  }
+  return Math.random().toString(36).substring(2, 10);
+};
 
 export const createNode = (type: SDFNodeType, position: [number, number] = [0,0]): SDFNode => {
   const id = generateId();
