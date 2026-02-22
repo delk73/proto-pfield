@@ -1,0 +1,5 @@
+{
+  "name": "precision-field",
+  "description": "Precision-Field is an interactive visualization and control surface for the Precision-DPW geometric signal core. It provides a real-time field-based view of deterministic signal evolution, exposing spatial structure, phase dynamics, and audio egress through a unified interface. Precision-Field does not define new signal semantics; it projects the canonical engine into visual and auditory domains for exploration, debugging, and experimental coupling.",
+  "requestFramePermissions": []
+}

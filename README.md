@@ -1,11 +1,27 @@
-<div align="center">
+# PrecisionField
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+PrecisionField is an interactive visualization and control surface for the Precision-DPW geometric signal core. It provides a real-time field-based view of deterministic signal evolution via a graph-based Signed Distance Function (SDF) editor.
 
-  <h1>Built with AI Studio</h2>
+## Documentation
+The internal logic and architectural contracts are documented in the [PrecisionField Documentation Suite](./docs/precisionfield/README.md).
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### Quick Links
+- [**Architecture Overview**](./docs/precisionfield/00_overview.md)
+- [**Domain Inheritance Contracts**](./docs/precisionfield/10_contracts.md)
+- [**Test & Regression Plan**](./docs/precisionfield/40_test_plan.md)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Tech Stack
+- **Frontend**: React 19, Tailwind CSS
+- **Graphics**: Three.js, @react-three/fiber
+- **Architecture**: Context API + useReducer for state, Custom GLSL compiler for SDFs
+- **Icons**: Lucide-React
 
-</div>
+## Getting Started
+The application loads a "Regression Suite" by default. Use the sidebar to add primitives (Circles, Boxes, Capsules) and compose them using Boolean operators (Union, Subtract, Intersect) or Domain warps (Mirror, Repeat).
+
+### Interactive Controls
+- **Click**: Select an object in the viewport or hierarchy.
+- **Drag Gizmos**: Direct manipulation of position, rotation, and geometry parameters.
+- **'B' + Mouse Drag**: Adjust Smooth Blend power for the selected Boolean operation.
+- **Middle-Mouse / Alt+Click**: Pan the viewport.
+- **Scroll**: Zoom.
